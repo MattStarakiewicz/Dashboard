@@ -1,0 +1,87 @@
+table {
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.table {
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 10px; 
+    td, th {
+        font-family: $brand-font;
+        font-size: $page-section-font-size;
+        padding: 20px 10px;
+        vertical-align: top;
+        border-top: 2px solid $disabled-color;
+        .position-right, p {
+            float: right;
+            text-align: right;
+        };
+        p {
+            margin: 0;
+            font-size: $page-section-font-size;
+            font-weight: 400;
+        };
+    };
+    th {
+        text-align: inherit;
+        color: $brand-secondary-color;
+        padding-right: 100px;
+    };
+    td {
+        color: $paragraph-color;
+        .position-right {
+            float: right;
+            text-align: left;
+        };
+    };
+    .end-line {
+        border-bottom: 2px solid $disabled-color;
+    };
+    .simple-table {
+        border-top: 0;
+        border-bottom: 2px solid $disabled-color;
+        padding: 14px 10px;
+    }
+};
+
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+};
+
+
+tr {
+    
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+        &:hover {
+            background-color: $disabled-color;
+            .table-ico-link, .table-ico-trash {
+                visibility: visible;
+            };
+        };
+};
+
+.table-ico-link, .table-ico-trash {
+    cursor: pointer;
+    padding: 0 10px;
+    visibility: hidden;
+} 
+
+.table-ico-link {
+    color: $brand-main-color;
+};
+
+.table-ico-trash {
+    color: $brand-secondary-color;
+};
+
+
+
+
+
+

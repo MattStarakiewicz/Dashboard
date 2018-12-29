@@ -1,0 +1,29 @@
+h1, h2, h3, h4, h5, h6, {
+    font-family: $brand-font;
+};
+
+h1 {
+    font-size: $page-header-font-size;
+    color: $brand-secondary-color;
+    font-weight: 500;
+    text-transform: uppercase;
+};
+
+h2, h3, h4 {
+    font-size: $page-section-font-size;
+    color: $brand-secondary-color;
+    font-weight: 700;
+};
+
+h5, h6 {
+    color: $brand-secondary-color;
+};
+
+.header-padding {
+    padding: 0 12px;
+};
+
+
+
+
+
