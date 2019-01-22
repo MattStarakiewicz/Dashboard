@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.prefixed.css" />
+</head>
+<body>
+  <!-- Tutaj będą nasze modale -->
+  <div class="overlay" id="overlay">
+      <div class="modal" id="myModal">
+          <div class="btn-close js--close-modal">x</div>
+      
+          <h4>Witaj w modalu!</h4>
+          <p>Lorem ipsum dolor sit amet...</p>
+      
+          <button class="js--close-modal">Okay</button>
+      </div>
+  </div>
+  <header>
+    <nav class="main-menu">
+      <ul class="main-right">
+        <li>
+          <a class="wallet-box" href="#">
+            <i class="icon-wallet"></i>
+            <h4 class="wallet">$1,500.00</h4>
+            <i class="icon-arrow-down-small small"></i>
+          </a>
+          <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-notification"></i>
+            <div class="orange-alert"></div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-profile"></i>
+            <h5>Leonardo Dicaprio<h5>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-quit"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="said-panel">
+    <div class="logo">
+      <div class="logotype">
+        <img src="./images/logo.png" alt="logo">
+      </div>
+      <div class="hamburger">
+        <div class="hamburger-line"></div>
+      </div>
+    </div>
+    <nav class="side-menu">
+      <ul>
+        <li>
+          <a href="#">
+            <i class="icon-general"></i>
+            <h2>General</h2>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-details"></i>
+            <h2>Details</h2>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-links"></i>
+            <h2>Links</h2>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-banners"></i>
+            <h2>Banners</h2>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-personaldata"></i>
+            <h2>Personal Data</h2>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-payout"></i>
+            <h2>Payout</h2>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-postback"></i>
+            <h2>Postback</h2>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="menager">
+      <h2>YOUR MENAGER</h2>
+      <div class="face-link">
+        <img src="./images/profile-1.png" alt="menager">
+        <div class="alert green"></div><a href="">Mikhael E.</a>
+      </div>
+    </div>
+  </section>
+  <section class="content first-content">
+    <div class="container bottom-line">
+      <h1>Personal data</h1>
+    </div>
+    <form action="" method="POST">
+      <div class="container bottom-line">
+        <div class="simple-container first-container centered">
+            <label class="field-title">Name</label>
+            <input class="simple-input" type="text" name="user-name" placeholder="Your Name">
+        </div>
+        <div class="simple-container centered">
+            <label class="field-title">Surname</label>
+            <input class="simple-input" type="text" name="user-name" placeholder="Your Surname">
+        </div>
+        <div class="simple-container centered">
+            <label class="field-title">E-mail</label>
+            <input class="simple-input" type="email" name="user-name" placeholder="johndoe@youremail.com" required>
+        </div>
+        <div class="simple-container last-container centered">
+            <label class="field-title">Phone Number</label>
+            <input class="simple-input" type="number" name="user-name" placeholder="Numbers only">
+        </div>
+      </div>
+      <div class="container bottom-line">
+          <div class="simple-container first-container centered">
+              <label class="field-title">Skype</label>
+              <input class="simple-input" type="text" name="user-name">
+          </div>
+          <div class="simple-container centered">
+              <label class="field-title">ICQ</label>
+              <input class="simple-input" type="text" name="user-name">
+          </div>
+          <div class="simple-container last-container centered">
+              <label class="field-title">Msn</label>
+              <input class="simple-input" type="text" name="user-name">
+          </div>
+        </div>
+        <div class="container bottom-line">
+            <div class="simple-container first-container last-container centered">
+                <label class="field-title">Wallet</label>
+                <input class="simple-input" type="text" name="user-name">
+            </div>
+        </div>
+        <div class="container bottom-line">
+            <div class="simple-container first-container centered">
+                <label class="field-title">Password</label>
+                <input class="simple-input" type="password" name="user-name">
+            </div>
+            <div class="simple-container last-container centered">
+                <label class="field-title">Repeat</label>
+                <input class="simple-input" type="text" name="user-name">
+            </div>
+        </div>
+        <div class="container bottom-line">
+            <button type="submit" class="btn main-button btn-centered btn-links-last">Save</button>
+        </div>
+      </form>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

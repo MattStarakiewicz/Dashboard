@@ -1,119 +1,202 @@
-.said-panel {
-    position: fixed;
-    z-index: 102;
-    max-width: 210px;
-    background-color: $side-menu-background;
-    height: 100%;
-        .logo {
-        display: flex;
-        flex-direction: row;
-        width: 210px;
-        padding: 20px 17px 10px 15px;
+@media (min-width: 768px) {
+    .said-panel {
+        position: fixed;
+        z-index: 102;
+        max-width: 210px;
         background-color: $side-menu-background;
-        
-        .logotype {
+        height: 100%;
+            .logo {
+            display: flex;
+            flex-direction: row;
+            width: 210px;
+            padding: 20px 17px 10px 15px;
             background-color: $side-menu-background;
-            width: 130px
-        };
-        .hamburger {
             
-            background-color: $side-menu-background;
-            color: $brand-secondary-color;
-            width: 100%;
-            margin-top: 7px;
-            margin-left: 22px;
-            border-top: 2px solid $brand-secondary-color;
-            border-bottom: 2px solid $brand-secondary-color;
-            height: 14px;
-            .hamburger-line {
-                margin-top: 4px;
-                height: 2px;
-                background-color: $brand-secondary-color;
-                width: 100%;
+            .logotype {
+                background-color: $side-menu-background;
+                width: 130px
             };
-        };
-    };
-
-.side-menu {
-    max-width: 210px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    background-color: $side-menu-background;
-    padding-bottom: 35px;
-    border-bottom: 1px solid $brand-secondary-color;
-    ul {
-        margin: 0;
-        padding: 0;
-        li {          
-            a {
-                width: 100%;
+            .hamburger {
+                
+                background-color: $side-menu-background;
                 color: $brand-secondary-color;
-                border-left: 4px solid transparent;
-                padding: 12px 0;
-                &:hover {
-                    background-color: $side-menu-hover;
-                    border-left: 4px solid $brand-main-color;
-                    color: $active-element-color;
+                width: 100%;
+                margin-top: 7px;
+                margin-left: 22px;
+                border-top: 2px solid $brand-secondary-color;
+                border-bottom: 2px solid $brand-secondary-color;
+                height: 14px;
+                .hamburger-line {
+                    margin-top: 4px;
+                    height: 2px;
+                    background-color: $brand-secondary-color;
+                    width: 100%;
                 };
-                display: flex;
-                flex-direction: row;
-                i {
-                    padding: 0 15px;
-                };
-                h2 {              
-                    color: inherit;
-                    padding-top: 3px;
-                    font-weight: 300;
-                    font-size: $paragraph-font-size;
-                    margin: 0;
+            };
+        };
 
-                };               
+    .side-menu {
+        max-width: 210px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: $side-menu-background;
+        padding-bottom: 35px;
+        border-bottom: 1px solid $brand-secondary-color;
+        ul {
+            margin: 0;
+            padding: 0;
+            li {          
+                a {
+                    width: 100%;
+                    color: $brand-secondary-color;
+                    border-left: 4px solid transparent;
+                    padding: 12px 0;
+                    &:hover {
+                        background-color: $side-menu-hover;
+                        border-left: 4px solid $brand-main-color;
+                        color: $active-element-color;
+                    };
+                    display: flex;
+                    flex-direction: row;
+                    i {
+                        padding: 0 15px;
+                    };
+                    h2 {              
+                        color: inherit;
+                        padding-top: 3px;
+                        font-weight: 300;
+                        font-size: $paragraph-font-size;
+                        margin: 0;
+
+                    };               
+                };
             };
         };
     };
-};
 
-.menager {
-    background-color: $side-menu-background;
-    max-width: 210px;
-    padding: 15px 0;
-    h2 {
-        margin: 0;
-        padding: 15px;
-        font-size: $small-link-font-size;
-        font-weight: 400;
-        line-height: 1.5;
-    };
-    .face-link {
-        display: flex;
-        flex-direction: row;
-        img {
-            width: 40px;
-            height: 40px;
-            margin-left: 15px;
-            margin-bottom: 15px;
-        };
-        a {
-            padding: 12px 0 0 12px;
+    .menager {
+        background-color: $side-menu-background;
+        max-width: 210px;
+        padding: 15px 0;
+        h2 {
+            margin: 0;
+            padding: 15px;
             font-size: $small-link-font-size;
+            font-weight: 400;
+            line-height: 1.5;
         };
-        .alert {
-            position: absolute;
-            z-index: 100;
-            width: 13px;
-            height: 13px;          
-            border-radius: 100%;
-            margin: 0 0 0 42px;
-            background-color: transparent;
+        .face-link {
+            display: flex;
+            flex-direction: row;
+            img {
+                width: 40px;
+                height: 40px;
+                margin-left: 15px;
+                margin-bottom: 15px;
+            };
+            a {
+                padding: 12px 0 0 12px;
+                font-size: $small-link-font-size;
+            };
+            .alert {
+                position: absolute;
+                z-index: 100;
+                width: 13px;
+                height: 13px;          
+                border-radius: 100%;
+                margin: 0 0 0 42px;
+                background-color: transparent;
+            };
+            .orange {
+                background-color: $orange-alert;
+            };
+            .green {
+                background-color: $green-alert;
+            };
         };
-        .orange {
-            background-color: $orange-alert;
+
+    };
+    };
+};
+
+@media (max-width: 767px) {
+    .said-panel { 
+        background-color: $side-menu-background;
+        height: auto;
+            .logo {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            width: 210px;
+            padding: 20px 17px 10px 15px;
+            background-color: $side-menu-background;
+            
+            .logotype {
+                background-color: $side-menu-background;
+                width: 130px
+            };
+            .hamburger {
+                cursor: pointer;
+                background-color: $side-menu-background;
+                color: $brand-secondary-color;
+                width: 100%;
+                margin-top: 7px;
+                margin-left: 22px;
+                border-top: 2px solid $brand-secondary-color;
+                border-bottom: 2px solid $brand-secondary-color;
+                height: 14px;
+                .hamburger-line {
+                    margin-top: 4px;
+                    height: 2px;
+                    background-color: $brand-secondary-color;
+                    width: 100%;
+                };
+            };
         };
-        .green {
-            background-color: $green-alert;
+
+    .side-menu {
+        margin: 0 auto;
+        max-width: 210px;
+        display: none;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: $side-menu-background;
+        padding-bottom: 35px;
+        ul {
+            margin: 0;
+            padding: 0;
+            li {          
+                a {
+                    width: 100%;
+                    color: $brand-secondary-color;
+                    border-left: 4px solid transparent;
+                    padding: 12px 0;
+                    display: flex;
+                    flex-direction: row;
+                    i {
+                        padding: 0 15px;
+                    };
+                    h2 {              
+                        color: inherit;
+                        padding-top: 3px;
+                        font-weight: 300;
+                        font-size: $paragraph-font-size;
+                        margin: 0;
+
+                    };               
+                };
+            };
         };
     };
 
-};
+    .menager {
+        display: none;
+    };
+
+    .show {
+        display: flex;
+    };
+
+    };
 };

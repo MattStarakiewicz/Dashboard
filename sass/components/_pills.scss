@@ -1,48 +1,99 @@
-.nav {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-    .nav-pill {
-        display: block;
-        padding: 5px 15px 5px 40px;
-        color: $primary-link-color;
-        background-color: transparent;
-        border-radius: 3px;
-        margin: 5px 20px;
-        line-height: 1.5;
-        font-size: $button-font-size;
-        border: 1px solid transparent;
+@media (min-width: 768px) {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        .nav-pill {
+            display: block;
+            padding: 5px 15px 5px 40px;
+            color: $primary-link-color;
+            background-color: transparent;
+            border-radius: 3px;
+            margin: 5px 20px;
+            line-height: 1.5;
+            font-size: $button-font-size;
+            border: 1px solid transparent;
+        };
+        .active {
+            background-color: $disabled-color;
+            color: $brand-secondary-color;
+        };
+        .alert {
+            position: absolute;
+            z-index: 100;
+            width: 14px;
+            height: 14px;
+            
+            border-radius: 100%;
+            margin: 4px 0 0 -25px;
+        };
+        .blue {
+            background-color: $blue-alert;
+        };
+        .orange {
+            background-color: $orange-alert;
+        };
+        .green {
+            background-color: $green-alert;
+        };
     };
-    .active {
-        background-color: $disabled-color;
-        color: $brand-secondary-color;
-    };
-    .alert {
-        position: absolute;
-        z-index: 100;
-        width: 14px;
-        height: 14px;
-        
-        border-radius: 100%;
-        margin: 4px 0 0 -25px;
-    };
-    .blue {
-        background-color: $blue-alert;
-    };
-    .orange {
-        background-color: $orange-alert;
-    };
-    .green {
-        background-color: $green-alert;
+
+    .nav-padding {
+        padding: 20px 0;
     };
 };
 
-.nav-padding {
-    padding: 20px 0;
+@media (max-width: 767px) {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        .nav-pill {
+            display: block;
+            padding: 3px 12px 5px 40px;
+            color: $primary-link-color;
+            background-color: transparent;
+            border-radius: 3px;
+            margin: 5px 8px;
+            line-height: 1.5;
+            font-size: $mobile-button-size;
+            border: 1px solid transparent;
+        };
+        .active {
+            background-color: $disabled-color;
+            color: $brand-secondary-color;
+        };
+        .alert {
+            position: absolute;
+            z-index: 100;
+            width: 12px;
+            height: 12px;
+            
+            border-radius: 100%;
+            margin: 6px 0 0 -25px;
+        };
+        .blue {
+            background-color: $blue-alert;
+        };
+        .orange {
+            background-color: $orange-alert;
+        };
+        .green {
+            background-color: $green-alert;
+        };
+    };
+
+    .nav-padding {
+        padding: 10px 0;
+    };
 };
 
 

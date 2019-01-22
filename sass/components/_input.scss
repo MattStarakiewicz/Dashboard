@@ -1,48 +1,169 @@
-input {
-    font-family: $brand-font;
-    font-size: $paragraph-font-size;
-    color: $disabled-color;
-    padding: 5px 7px;
-    &:focus {
-        outline: none;
+@media (min-width: 768px) {
+    input {
+        font-family: $brand-font;
+        font-size: $paragraph-font-size;
+        color: $disabled-color;
+        padding: 5px 7px;
+        &:focus {
+            outline: none;
+        };
     };
-};
 
-.date-input {
-    display: block;
-    line-height: 1.5;
-    color: $paragraph-color;
-    border: 1px solid transparent;
-};
+    .date-input {
+        display: block;
+        line-height: 1.5;
+        color: $paragraph-color;
+        border: 1px solid transparent;
+    };
 
-.right-border {
-    border-right: 2px solid $disabled-color;
-};
-
-.data-container {
-    display: flex;
-    flex-direction: row;
-    width: 450px;
-    padding: 30px  0;
-    .input-group {
-        margin-right: 20px;
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: stretch;
-        width: 380px;
+    .simple-input {
+        line-height: 2;
+        color: $paragraph-color;
         border: 2px solid $disabled-color;
         border-radius: 3px;
-        padding: 4px;
-            i {
-                line-height: 1.5;
-                padding-top: 5px;
-            };
-            &:hover {
-                cursor: pointer;
-            };
+        width: 300px;
+    };
+
+    .field-title {
+        margin: 12px;
+    }
+
+    .right-border {
+        border-right: 2px solid $disabled-color;
+    };
+
+    .data-container {
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+        padding: 30px  0;
+        .input-group {
+            margin-right: 20px;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            width: 380px;
+            border: 2px solid $disabled-color;
+            border-radius: 3px;
+            padding: 4px;
+                i {
+                    line-height: 1.5;
+                    padding-top: 5px;
+                };
+                &:hover {
+                    cursor: pointer;
+                };
+        };
+    };
+
+    .simple-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 450px;
+        padding: 10px  0;
+    };
+
+    .first-container {
+        padding-top: 30px;
+    };
+
+    .last-container {
+        padding-bottom: 30px;
+    };
+
+    label {
+        font-size: $label-size;
+        color: $brand-secondary-color;
+        font-weight: 700;
+        font-family: $brand-font;
     };
 };
 
+@media (max-width: 767px) {
+    input {
+        font-family: $brand-font;
+        font-size: $mobile-input-size;
+        color: $disabled-color;
+        padding: 1px 2px;
+        &:focus {
+            outline: none;
+        };
+    };
 
+    .date-input {
+        display: block;
+        line-height: 1.5;
+        color: $paragraph-color;
+        border: 1px solid transparent;
+    };
+
+    .simple-input {
+        line-height: 2;
+        color: $paragraph-color;
+        border: 2px solid $disabled-color;
+        border-radius: 3px;
+        width: 350px;
+        margin-right: 10px;
+        max-height: 30px;
+        padding: 0 5px;
+    };
+
+    .field-title {
+        margin: 2px 12px;
+    }
+
+    .right-border {
+        border-right: 2px solid $disabled-color;
+    };
+
+    .data-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+       
+        padding: 20px  0;
+        .input-group {
+            margin: 0 2px;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            width: 315px;
+            border: 2px solid $disabled-color;
+            border-radius: 3px;
+            padding: 2px;
+                i {
+                    line-height: 1.5;
+                };
+                &:hover {
+                    cursor: pointer;
+                };
+        };
+    };
+
+    .simple-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px  0;
+    };
+
+    .first-container {
+        padding-top: 20px;
+    };
+
+    .last-container {
+        padding-bottom: 20px;
+    };
+};
+
+@media (max-width: 543px) {
+    .simple-input {
+        width: 200px;
+    };
+};
 

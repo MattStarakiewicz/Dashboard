@@ -1,12 +1,21 @@
-.chart-img {
-    padding: 20px 12px 40px 12px;
-    width: 100%;
-    max-width: 720px;
-    display: block;
-    margin: 0 auto;
+@media (min-width: 768px) {
+        .chart-img {
+        padding: 20px 12px 40px 12px;
+        width: 100%;
+        max-width: 720px;
+        display: block;
+        margin: 0 auto;
+    };
 };
 
-
-
+@media (max-width: 767px) {
+        .chart-img {
+        padding: 5px 12px 40px 12px;
+        width: 100%;
+        max-width: 720px;
+        display: block;
+        margin: 0 auto;
+    };
+};
 
 

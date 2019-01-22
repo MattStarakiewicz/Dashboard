@@ -1,13 +1,23 @@
-.content {
-    float: right;
-    width: calc(100% - 242px);
-    margin: 10px 16px 30px 0;
-    background-color: $background;
-    border: 1px solid $disabled-color;
-    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.1);
+@media (min-width: 768px) {
+    .content {
+        float: right;
+        width: calc(100% - 242px);
+        margin: 10px 16px 30px 0;
+        background-color: $background;
+        border: 1px solid $disabled-color;
+        box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.1);
 
+    };
+
+    .first-content {
+        margin: 70px 16px 10px 0;
+    };
 };
 
-.first-content {
-    margin: 70px 16px 10px 0;
+@media (max-width: 767px) {
+    .content {
+        margin: 0;
+        width: 100%;
+        background-color: $background;
+    };
 };
